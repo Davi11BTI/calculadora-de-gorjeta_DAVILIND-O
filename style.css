@@ -8,11 +8,6 @@
  
  :root {
      font-size: 62.5%;
-     --bg-body: #c5e4e7;
-     --bg-main: #fff;
-     --strong-text: #5e7a7d;
-     --bg-div: #f3f9fa;
-     --input-text: #00474b;
      --jagged-ice: #c5e4e7;
      --white: #fff;
      --greyish-turquoise: #5e7a7d;
@@ -20,11 +15,11 @@
      --sherpa-blue: #00474b;
      --topaz: #26c2ae;
      --beetle-green: #547878;
+     --regent-grey: #7f9d9f;
  }
  
  body {
      font-size: 1.6rem;
-     background: var(--bg-body);
      background: var(--jagged-ice);
  }
  
@@ -36,15 +31,11 @@
  }
  
  main {
-     background: var(--bg-main);
      background: var(--white);
      padding: 3.2rem 2.4rem;
      border-radius: 2.5rem 2.5rem 0 0;
  }
  
- .info strong{
-     color: var(--strong-text);
- }
  .info{
  
      margin-inline: .8rem;
@@ -59,7 +50,6 @@
  
  .input-box {
      margin-top: .6rem;
-     background: var(--bg-div);
      background: var(--squeeze);
      padding: .6rem 1.8rem;
      display: flex;
@@ -74,11 +64,9 @@
          outline: none;
          font-size: 2.4rem;
          font-weight: 700;
-         color: var(--input-text);
          color: var(--sherpa-blue);
  
          &::placeholder {
-             color: var(--input-text);
              color: var(--sherpa-blue);
              opacity: 0.35;
  
@@ -128,3 +116,44 @@
  }
  }
  
+ .results {
+     background: var(--sherpa-blue);
+     border-radius: 1.5rem;
+     padding: 4rem 2.4rem 2.4rem;
+ 
+     .amount,
+     .total {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 2.4rem;
+ 
+         p{
+             color: var(--white);
+             font-weight: 700;
+ 
+             span{
+                 color: var(--regent-grey);
+                 font-size: 1.3rem;
+             }
+         }
+ 
+         strong {
+             font-size: 3.2rem;
+             color: var(--topaz);
+ 
+         }
+     }
+ 
+     button {
+         background: var(--topaz);
+         color: var(--sherpa-blue);
+         font-size: 2rem;
+         text-transform: uppercase;
+         width: 100%;
+         border: none;
+         border-radius: .5rem;
+         font-weight: 700;
+         padding-block: .9rem;
+     }
+ }
