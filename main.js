@@ -5,12 +5,14 @@ let bill = 0
  
  
  let billInput = document.querySelector("#bill")
- @@ -12,21 +13,56 @@ function receiveBillValue() {
+ billInput.addEventListener("input", receiveBillValue)
+ 
+ function receiveBillValue() {
+     bill = billInput.valueAsNumber
+     calculate()
  
  }
  
- let numberOfPeopleInput = document.querySelector("people")
- numberOfPeopleInput.addEventListener("input", )
  let numberOfPeopleInput = document.querySelector("#people")
  numberOfPeopleInput.addEventListener("input", receiveNumberOfPeople)
  
@@ -20,8 +22,7 @@ let bill = 0
  }
  
  function receiveTipPercentage(value){
-     let buttonSelected = document.querySelector()
-     
+ 
      if(buttonSelected !== null){
          buttonSelected.classList.remove("button-selected")
      }
@@ -31,7 +32,7 @@ let bill = 0
  
      customTipInput = document.querySelector("#custom-tip")
      customTipInput.value = ""
-     
+ 
  
      calculate()
  }
@@ -46,13 +47,12 @@ let bill = 0
  
  
      calculate()
-     
+ 
  }
  
  
  function calculate(){
      if(bill !== 0 && tipPerecentage !== 0 && numberOfPeople !== 0){
-         console.log("calcular")
          let tipAmountStrong = document.querySelector(".amount strong")
  
          let tipAmountPerson = (bill * tipPerecentage)/numberOfPeople
@@ -66,3 +66,9 @@ let bill = 0
      }
      else {
          console.log("Ainda não é possível calcular")
+     }
+ }
+ 
+ function reset(){
+     
+ }
