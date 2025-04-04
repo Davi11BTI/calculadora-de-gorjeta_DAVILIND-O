@@ -209,13 +209,4 @@
  
          .total strong {
              font-size: 4.8rem;
-         }
- 
-         button:hover {
-             background: var(--water-leaf);
-             transition: .3s;
-             cursor: pointer;
-         }
-     }
- }
- ~
+       

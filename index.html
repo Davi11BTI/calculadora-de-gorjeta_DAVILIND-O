@@ -28,11 +28,6 @@
                  <strong>Select tip %</strong>
  
                  <div>
-                     <button>5%</button>
-                     <button>10%</button>
-                     <button>15%</button>
-                     <button>25%</button>
-                     <button>50%</button>
                      <button onclick="receiveTipPercentage(5)" id="button-5">5%</button>
                      <button onclick="receiveTipPercentage(10)" id="button-10">10%</button>
                      <button onclick="receiveTipPercentage(15)" id="button-15">15%</button>
@@ -40,6 +35,7 @@
                      <button onclick="receiveTipPercentage(50)" id="button-50">50%</button>
  
                      <input type="number" id="custom-tip" placeholder="Custom">
+                     <input oninput="receiveCustomTipPercentage()" type="number" id="custom-tip" placeholder="Custom">
                  </div>
              </div>
  
@@ -63,6 +59,7 @@
                      </p>
  
                      <strong>$4.27</strong>
+                     <strong>$0.00</strong>
                  </div>
  
                  <div class="total">
@@ -71,6 +68,7 @@
                      </p>
  
                      <strong>$32.79</strong>
+                     <strong>$0.00</strong>
                  </div>
              </div>
  
